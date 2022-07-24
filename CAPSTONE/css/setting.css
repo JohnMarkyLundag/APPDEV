@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
+/* Float four columns side by side */
+.column1 {
+  float: left;
+  width: 35%;
+  padding: 0 10px;
+}
+.column2 {
+  float: left;
+  width: 65%;
+  padding: 0 10px;
+}
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Style the counter cards */
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #fff;
+  height: 520px;
+  border-radius: 10px;
+}
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #fff;
+  height: 520px;
+  border-radius: 10px;
+}
+.container{
+    background-color: #fff;
+    width: 30%;
+    min-width: 100px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 55%;
+    left: 18.5%;
+    padding: 50px 30px;
+    border-radius: 9px;
+}
+.image-container{
+    width: 90%;
+    margin: 0 auto 30px auto;
+}
+.image-container img{
+    display: block;
+    position: relative;
+    max-width: 90%;
+    max-height: 370px;
+    margin: auto;
+}
+figcaption{
+    margin: 20px 0 30px 0;
+    text-align: center;
+    color: #fff;
+}
+.container input[type="file"]{
+    display: none;
+}
+.container label{
+    display: block;
+    position: relative;
+    background-color:#cecece;
+    color: #000;
+    font-size: 16px;
+    text-align: center;
+    width: 280px;
+    padding: 14px 0;
+    border-radius: 19px;
+    margin: auto;
+    cursor: pointer;
+
+}
+* {
+  box-sizing: border-box;
+}
+
+
+/* style inputs and link buttons */
+.column2 input[type=text], input[type=password] {
+  width: 100%;
+  height: 40px;
+  padding: 12px;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  margin: 5px 0;
+  margin-top: 1px;
+  margin-bottom: 20px;
+  display: inline-block;
+  font-size: 17px;
+  text-decoration: none;
+  background: #fff;
+}
+
+.column2 input:hover,
+.btn:hover {
+  opacity: 1;
+}
+label{
+  float: left;
+}
+/* style the submit button */
+input[type=submit] {
+  background-color: #cecece;
+  color: #000;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 7%;
+  text-transform: capitalize;
+  font-size: 16PX;
+  padding: 12px 50px;
+  font-family: poppins;
+  margin-top: 35px;
+}
+
+/* Two-column layout */
+.col {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* vertical line */
+.vl {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 2px solid #ddd;
+  height: 175px;
+}
+
+/* text inside the vertical line */
+.vl-innertext {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 8px 10px;
+}
+
+/* hide some text on medium and large screens */
+.hide-md-lg {
+  display: none;
+}
