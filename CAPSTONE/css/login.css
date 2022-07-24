@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: poppins;
+}
+
+.page-wrap {
+  display: flex;
+  min-height: 100vh;
+}
+
+.left-panel {
+  flex: 1 1 66.666%;
+  background: #f0ffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-panel .illustration img {
+  margin-bottom: 40px;
+  width: 100%;
+}
+.illustration img {
+  width: 100%;
+  margin-top: -90px;
+}
+
+.left-panel h2 {
+  color: #5da1bb;
+  font-size: 35px;
+  font-family: poppins;
+  font-weight: 400;
+  text-align: center;
+  margin-top: -100px;
+}
+.left-panel h2 strong{
+  color: #4d83b7;
+}
+.right-panel {
+  flex: 1 1 33.333%;
+  padding: 25px;
+  margin-top: 90px;
+
+}
+
+.right-panel h1 {
+  color: #FF5858;
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.right-panel h1 strong {
+  color: #182f46;
+  font-weight: 600;
+  margin-left: 50px;
+}
+
+.animated-form .form-group {
+  position: relative;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.form-group.flex-end {
+  justify-content: flex-end;
+}
+
+.animated-form .form-group label {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+  color: #AAA;
+  font-size: 18px;
+  transition: 0.4s ease-out;
+  margin-left: 60px;
+}
+
+.animated-form .form-group input {
+  display: block;
+  width: 80%;
+  padding: 10px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 50px;
+  outline: none;
+  background: none;
+  color: #000;
+  font-size: 20px;
+  margin-left: 40px;
+  transition: 0.4s ease-out;
+}
+
+.animated-form .form-group:focus-within label,
+.animated-form .form-group.has-content label {
+  top: 0px;
+  transform: translateY(-100%);
+  color: #4d83b7;
+}
+
+.animated-form .form-group:focus-within input, 
+.animated-form .form-group.has-content input {
+  border-bottom-color: lightgrey;
+}
+.animated-form .form-group.flex-end {
+  margin-bottom: 25px;
+}
+.animated-form .form-group .button {
+  display: inline-block;
+  width: auto;
+  padding: 6px 100px;
+  border: 3px solid #4d83b7;
+  border-radius: 999px;
+  background-image: linear-gradient(to right, transparent 50%, #182f46 50%, #4d83b7);
+  background-size: 200%;
+  color: #4d83b7;
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.animated-form .form-group .button:hover {
+  color: #FFF;
+  background-position: 100%;
+  border: 3px solid #FFF;
+}
+
+.animated-form .lost-password a {
+  color: #5da1bb;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+  margin-left: 190px;
+}
+.animated-form .lost-password a:hover {
+  color: #4d83b7;
+}
